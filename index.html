@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Introduction to JS: Loops</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/" class="link">Concept</a></li>
+                <li class="nav-item"><a href="./assignment.html" class="link">Assignment</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+        
+        <section class="concept">
+            <h2 class="title">Concept: Loops</h2>
+            <p class="paragraph">Loops are fundamental programming constructs that allow you to execute a block of code multiple times. They are essential for tasks that require repetition, such as iterating over arrays or performing operations until a condition is met. In web development, loops help automate repetitive tasks, making your code more efficient and easier to manage.
+            </p>
+
+            <p class="paragraph">There are several types of loops in programming, each with its own use cases. The most common types are 'for' loops, 'while' loops, and 'do-while' loops. Each type of loop has a specific structure and purpose, which we'll explore in this lesson.</p>
+
+            <p class="paragraph">Understanding loops is crucial for writing efficient code. They help reduce redundancy and improve the readability of your code by eliminating the need to write repetitive statements. Let's start by looking at the 'for' loop, one of the most commonly used loops in programming.</p>
+
+            <h3 class="sub-title">For Loops</h3>
+            <p class="paragraph">The 'for' loop is a control flow statement that allows code to be executed repeatedly based on a condition. It is particularly useful when you know in advance how many times you want to execute a statement or a block of statements.</p>
+
+            <p class="paragraph">A 'for' loop consists of three parts: initialization, condition, and increment/decrement. The initialization sets up the loop variable, the condition checks whether the loop should continue, and the increment/decrement updates the loop variable after each iteration.</p>
+
+            <p class="paragraph">Here's a simple example of a 'for' loop in JavaScript:</p>
+
+<code class="block-code">/*
+for (initialization; condition; increment/decrement) {
+    // logic
+}
+*/
+
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+  
+</code>
+
+            <p class="paragraph">This loop will print the numbers 0 through 4 to the console. Let's break down how it works: the loop starts with <code class="inline-code">i</code> set to 0, checks if <code class="inline-code">i</code> is less than 5, and then increments <code class="inline-code">i</code> by 1 after each iteration.</p>
+
+
+            <h3 class="sub-title">While Loops</h3>
+
+            <p class="paragraph">Another common loop in JavaScript is the while loop. This loop continues to execute a block of code as long as a specified condition is true. Unlike the for loop, the while loop is useful when the number of iterations is not known beforehand.</p>
+
+            <p class="paragraph">Here's an example of a while loop:</p>           
+
+<code class="block-code">let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}    
+</code>
+
+
+            <p class="paragraph">In this example, the loop will print numbers from 0 to 4. The loop checks the condition <code class="inline-code">i < 5</code> before each iteration and increments <code class="inline-code">i</code> by 1 within the loop body.</p>
+
+            <h3 class="sub-title">Do While Loops</h3>
+            <p class="paragraph">The do...while loop is similar to the while loop, but with a key difference: it will execute the block of code at least once before checking the condition. This is because the condition is evaluated after the loop body has been executed.
+            </p>
+
+            <p class="paragraph">Here's an example of a do...while loop:</p>
+            
+<code class="block-code">let i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 5);
+</code>
+            
+            <p class="paragraph">In this example, the loop will print numbers from 0 to 4. The loop body is executed first, and then the condition <code class="inline-code">i < 5</code> is checked.</p>
+
+            <p class="paragraph">
+                It is highly recommended to read through the <a class="text-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration">MDN documentation on loops and iteration.</a> before continuing.
+            </p>
+
+            
+            <h3 class="sub-title">Experiment Time</h3>
+            
+            <p class="paragraph">Open <code class="inline-code">index.js</code> and try the following:</p>
+            
+            <ul class="list">
+                <li class="list-item">Research the <code class="inline-code">break</code> and the <code class="inline-code">continue</code> keywords. Try to incorporate them in your experimentation.</li>
+                <li class="list-item">Write any questions that may arise in this experiment and we can discuss them in class.</li>
+            </ul>
+
+            <p class="paragraph">Once you are done experimenting, comment out your code.</p>
+        </section>
+
+        
+    </main>
+
+    <footer>
+    </footer>
+
+    <!-- include the script at the end of the body -->
+    <script src="./js/index.js"></script>
+</body>
+</html>
